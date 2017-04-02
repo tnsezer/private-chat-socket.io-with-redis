@@ -1,7 +1,5 @@
 # Express app with Redis and nodemon development server
 
-In this step we'll link a [Redis](http://redis.io/) container to the app from [step 01](https://github.com/b00giZm/docker-compose-nodejs-examples/tree/master/01-express-nodemon).
-
 ## Prerequisites
 
 Install [Docker](https://www.docker.com/) on your system.

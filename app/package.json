@@ -1,0 +1,14 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon -L app/chat.js"
+  },
+  "dependencies": {
+    "express": "~4.9.0",
+	"redis": "~0.12.1",
+	"hiredis": "~0.1.17",
+    "socket.io": "*"
+  }
+}

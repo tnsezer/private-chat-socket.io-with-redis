@@ -1,0 +1,29 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+	    <script type="text/javascript">
+			var uid = 'UID';
+			var username = 'USERNAME';
+	    </script>
+	
+<link href="/chat/chat.css?v=1.8" rel="stylesheet" type="text/css">
+<script src="/chat/chat.js?v=2.5" type="text/javascript"></script>
+<div class="chatbox_mainchat" id="chatbox_mainchat">
+    <div class="chatboxmainhead" onclick="javascript:toggleChatBoxMain()" style="">
+        <div class="chatboxtitle">
+            <div class="friendchat">
+            </div>
+            <div id="div_Chat">Mesajlaşma (<span id="div_Chat_count">0/0</span>)</div>
+            <div id="div_status" class="div_status_online" onclick="javascript:toggleChatStatus(event)">
+            </div>
+        </div>
+        <br clear="all">
+    </div>
+    <div class="chatboxbuddies" style="display: none;">
+	
+	</div>
+</div>
+<div id="div_status_change" style="top: 465px; left: 1212px; display: none;">
+    <div id="div_gooffline" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="gooffline()" style="background-color: white;">
+        Mesajlaşma Kapalı</div>
+    <div id="div_goonline" onmouseover="mouseover(this)" onmouseout="mouseout(this)" onclick="goonline()" style="width: 105px; background-color: white;">
+        Mesajlaşma Açık</div>
+</div>

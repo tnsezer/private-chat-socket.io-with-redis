@@ -28,8 +28,6 @@ var io = require('socket.io')(http);
 
 var redisc = require('redis');
 
-console.log(process.REDIS_PORT_6379_TCP_ADDR);
-
 var host = process.env.REDIS_PORT_6379_TCP_ADDR || '127.0.0.1';
 var port = process.env.REDIS_PORT_6379_TCP_PORT || 6379;
 

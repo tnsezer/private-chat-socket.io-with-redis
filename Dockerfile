@@ -1,4 +1,4 @@
-FROM node:0.10.38
+FROM node:latest
 
 RUN mkdir /src
 

@@ -1,21 +1,19 @@
-version: '2'
 
-services:
-    node:
-        build: .
-        volumes:
-            - "./app:/src/app"
-        ports:
-            - "2052:3000"
-        expose:
-            - "2052"
-        links:
-            - "redis:redis"
+node:
+    build: .
+    volumes:
+        - "./app:/src/app"
+    ports:
+        - "2052:3000"
+    expose:
+        - "2052"
+    links:
+        - "redis:redis"
 
-    redis:
-        image: redis  
-        ports:
-            - "6379:6379"
-        expose:
-            - "6379"
+redis:
+    image: redis  
+    ports:
+        - "6379:6379"
+    expose:
+        - "6379"
 
